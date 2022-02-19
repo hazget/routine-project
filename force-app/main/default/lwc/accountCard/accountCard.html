@@ -1,0 +1,29 @@
+<template>
+    <lightning-card icon-name="standard:account">
+        <template if:true={recordId}>
+            <span slot="title">{name}</span>
+            <!-- sldsValidatorIgnoreNextLine -->
+            <lightning-button-icon icon-name="utility:expand_alt" 
+                                   slot="actions" 
+                                   onclick={handleNavigateToRecord}>
+            </lightning-button-icon>
+            <div class="slds-var-m-horizontal_medium">
+                <lightning-layout>
+                    <lightning-layout-item size="4" padding="around-small">
+                        <div class="slds-form-element__label">Account Name</div><br />
+                        <lightning-formatted-text value={name}></lightning-formatted-text><br />
+                        <div class="slds-form-element__label">Industry</div><br />
+                        <lightning-formatted-text value={industry}></lightning-formatted-text><br />
+                        <div class="slds-form-element__label">Type</div><br />
+                        <lightning-formatted-text value={type}></lightning-formatted-text><br />
+                        <div class="slds-form-element__label">Price</div><br />
+                        <lightning-formatted-number value={budget} format-style="currency" currency-code="USD">
+                        </lightning-formatted-number><br />
+                        <div class="slds-form-element__label">Description</div><br />
+                        <lightning-formatted-text value={description}></lightning-formatted-text><br />
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </template>
+    </lightning-card>
+</template>

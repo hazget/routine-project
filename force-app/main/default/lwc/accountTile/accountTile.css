@@ -1,0 +1,10 @@
+.account-tile {
+    border: 1px solid #c32ffd;
+    background-color: #b4fdf3;
+    border-radius: .25rem;
+    display: block;
+  }
+ 
+  .account-tile-body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, #b4fdf3 100%);
+  }
